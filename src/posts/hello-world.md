@@ -1,5 +1,6 @@
 ---
 title: hello world
+tags: "posts"
 ---
 
 this is my first post!
