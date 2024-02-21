@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>custom filters in 11ty</title>
+    <link rel="stylesheet" href="/blog/css/style.css">
+</head>
+<body>
+<header>
+    <h1>custom filters in 11ty</h1>
+</header>
+<main>
+    <main>
+    <article><h2>what is a filter?</h2>
+<p>A filter processes data stored in a variable in a nunjuck (.njk) template file.</p>
+<p>here is an example:</p>
+<p><code>&lt;a href=&quot;{{ post.url | url }}&quot;&gt;an example link&lt;/a&gt;</code></p>
+<p>the url filter sanitizes the variable (post.url) and adds any defined URL prefixes.</p>
+<h2>how to make custom filter</h2>
+<p>to make a custom filter, you have to define it in your <code>.eleventy.js</code> file, like this:</p>
+<pre><code>eleventyConfig.addFilter(&quot;dateFormat&quot;, async function (value) {
+        return `${value.getFullYear()}-${value.getMonth() + 1}-${value.getDate()}`;
+    });
+</code></pre>
+<p>addFilter takes two parameters. The first one is the name of the filter, in our case &quot;dateFormat&quot; or in the first example &quot;url&quot;.
+The second one is a lambda function that returns the transformed value, in our case the formatted date as a string.</p>
+<p>The last step is to use our new custom filter:
+<code>&lt;p&gt;{{ post.data.date | dateFormat }}&lt;/p&gt;</code></p>
+<p>And that's it. Your new custom filter is usable globally in your 11ty project.
+All the snippets shown in this post were taken from the source code for this blog, which you can find <a href="(https://github.com/oliverpk2000/blog)">here</a>.
+I hope this post was helpfull to you, and enjoy your day.</p>
+</article>
+</main>
+<footer>
+    <a href="../../"><-- back</a>
+</footer>
+</main>
+</body>
+</html>
