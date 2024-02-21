@@ -3,3 +3,11 @@ body{
     color: #d7d7d7;
     background-color: black;
 }
+
+a{
+    color: aqua;
+}
+
+a:visited{
+    color: blue;
+}
