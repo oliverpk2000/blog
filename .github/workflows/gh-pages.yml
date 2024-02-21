@@ -1,16 +1,21 @@
-name: Build & Deploy
+name: Github Pages
 
 on:
   push:
-    branches: ['main']
+    branches: 'main'
+  
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: write
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+    
     strategy:
       matrix:
-        node-version: ['14.17.6']
+        node-version: ['20.11.1']
 
     steps:
       - uses: actions/checkout@v3
@@ -24,11 +29,12 @@ jobs:
       - name: Install packages
         run: npm ci
 
-      - name: Run npm build
-        run: npm run build:prod
+      - name: Build
+        run:  npx @11ty/eleventy
 
-      - name: Deploy to gh-pages
+      - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           publish_dir: ./public
+    
