@@ -35,4 +35,4 @@ The last step is to use our new custom filter:
 And that's it. Your new custom filter is usable globally in your 11ty project.
 All the snippets shown in this post were taken from the source code for this blog, which you can
 find [here](https://github.com/oliverpk2000/blog).
-I hope this post was helpfull to you, and enjoy your day.
+I hope this post was helpful to you, and enjoy your day.
