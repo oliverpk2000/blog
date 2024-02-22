@@ -1,7 +1,7 @@
 ---
 title: hello world
 date: 2024-02-21
-tags: "posts"
+tags: ["posts"]
 ---
 
 ## why
