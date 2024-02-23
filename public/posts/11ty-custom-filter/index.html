@@ -18,9 +18,9 @@
 <p>the url filter sanitizes the variable (post.url) and adds any defined URL prefixes.</p>
 <h2>how to make custom filter</h2>
 <p>to make a custom filter, you have to define it in your <code>.eleventy.js</code> file, like this:</p>
-<pre><code>eleventyConfig.addFilter(&quot;dateFormat&quot;, async function (value) {
-        return `${value.getFullYear()}-${value.getMonth() + 1}-${value.getDate()}`;
-    });
+<pre><code class="language-JavaScript">eleventyConfig.addFilter(&quot;dateFormat&quot;, async function (value) {
+    return `${value.getFullYear()}-${value.getMonth() + 1}-${value.getDate()}`;
+});
 </code></pre>
 <p>addFilter takes two parameters. The first one is the name of the filter, in our case &quot;dateFormat&quot; or in the first
 example &quot;url&quot;.
