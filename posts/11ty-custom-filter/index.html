@@ -6,11 +6,10 @@
     <link rel="stylesheet" href="/blog/css/style.css">
 </head>
 <body>
-<header>
-    <h1>custom filters in 11ty</h1>
-</header>
 <main>
-    <main>
+    <div class="page">
+        <h1>custom filters in 11ty</h1>
+        <main>
     <article><h2>what is a filter?</h2>
 <p>A filter processes data stored in a variable in a nunjuck (.njk) template file.</p>
 <p>here is an example:</p>
@@ -18,9 +17,9 @@
 <p>the url filter sanitizes the variable (post.url) and adds any defined URL prefixes.</p>
 <h2>how to make custom filter</h2>
 <p>to make a custom filter, you have to define it in your <code>.eleventy.js</code> file, like this:</p>
-<pre><code>eleventyConfig.addFilter(&quot;dateFormat&quot;, async function (value) {
-        return `${value.getFullYear()}-${value.getMonth() + 1}-${value.getDate()}`;
-    });
+<pre><code class="language-JavaScript">eleventyConfig.addFilter(&quot;dateFormat&quot;, async function (value) {
+    return `${value.getFullYear()}-${value.getMonth() + 1}-${value.getDate()}`;
+});
 </code></pre>
 <p>addFilter takes two parameters. The first one is the name of the filter, in our case &quot;dateFormat&quot; or in the first
 example &quot;url&quot;.
@@ -37,8 +36,10 @@ I hope this post was helpful to you, and enjoy your day.</p>
     <a href="../../"><-- back</a>
     <br>
     <br>
-    <img src="../../assets/Written-By-Human-Not-By-AI-Badge-white.png" alt="written by human not by AI">
+    <a href="https://notbyai.fyi/"><img src="../../assets/Written-By-Human-Not-By-AI-Badge-white.png"
+                                        alt="written by human not by AI"></a>
 </footer>
+    </div>
 </main>
 </body>
 </html>
