@@ -1,7 +1,7 @@
 body {
     font-family: sans-serif;
     color: #d7d7d7;
-    background-color: black;
+    background-color: #111111;
 }
 
 a {
@@ -9,7 +9,7 @@ a {
 }
 
 a:visited {
-    color: blue;
+    color: #2e2eff;
 }
 
 .page {
