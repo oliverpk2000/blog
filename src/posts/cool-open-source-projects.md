@@ -26,9 +26,9 @@ enjoy). Sebastian Lague's videos are incredible, and provide a lot of insight to
 can watch these videos [here](https://www.youtube.com/@SebastianLague). I especially recommend his two chess bot videos
 and his fluid simulations.
 
-## [PCXS2](https://github.com/PCSX2/pcsx2)
+## [PCSX2](https://github.com/PCSX2/pcsx2)
 
-PCXS2 is a great ps2 emulator which has been in development for 20 years. 99% percent of all playstation 2 games ever
+PCSX2 is a great ps2 emulator which has been in development for 20 years. 99% percent of all playstation 2 games ever
 released are at least playable on the software. It's a great project that I use myself a lot of the time. And it's a
 testament to PCSX2's quality that people keep using it.
 
