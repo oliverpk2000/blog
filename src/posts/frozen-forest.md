@@ -1,8 +1,7 @@
 ---
-title: frozen forest
-date: 2024-02-24
+title: frozen forest preview
+date: 2024-03-20
 tags: [ "posts" ]
-templateEngineOverride: md
 ---
 
 frozen forest is a game being developed by some classmates of mine. It's programmed in rust using the bevy game engine.
@@ -19,12 +18,10 @@ future.
 The gameplay so far is just fighting these little green blobs, which never respawn. You only have one attack, a red
 rectangle which destroys the blobs very quickly.
 
-{{TODO: insert gameplay gif here}}
+![frozen forest gameplay]({{"../../assets/gameplay.gif" | url }})
 
 One feature that I find very cool is the lazy rendering of the environment. Right now you have to click on a tile to
 render it, but once this is automatic it should be a cool feature.
 
-{{TODO: insert tile rendering gif here}}
-
-One issue I have with this build is that collidable objects such as trees are very small and don't clearly look
-important, which makes player movement awkward.
+One issue I have with this build is that sprites that collide with the player aren't very noticeable, which makes player
+movement awkward.
