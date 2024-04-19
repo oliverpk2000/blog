@@ -1,18 +1,24 @@
 body {
     font-family: sans-serif;
-    color: #d7d7d7;
+    color: #fff;
     background-color: #111111;
-}
-
-a {
-    color: #1da6a6;
-}
-
-a:visited {
-    color: #2e2eff;
 }
 
 .page {
     margin: auto;
     width: 75%;
+}
+
+a {
+    text-decoration: none;
+    color: #66b3ff;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #23648c;
 }
