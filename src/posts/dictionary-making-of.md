@@ -48,3 +48,4 @@ Accuracy was easy to accomplish, as I stumbled onto the [free dictionary api](ht
 up to date enough that it was very difficult to find words that didn't have an entry. It also had phonetics data which I
 added to the website.
 
+Once I implemented the functions to get and show the data, the website was ready to launch.
