@@ -17,8 +17,8 @@ decided to use the project idea to learn jQuery.
 
 I had a set of criteria for this website:
 
-- quick to load
 - simple, no distractions / no ads
+- quick to load
 - accurate
 
 One of my main objectives was to keep the workflow of using the site as short as possible. I wrote down all the actions
@@ -30,11 +30,21 @@ I took on the cambridge dictionary website (with cache and uBlock origin disable
 - close ad popup because I was too slow to read everything
 - read rest of definition
 
-The load times were also insane. In what world does a dictionary need
+The amount of transferred data was also insane.
+
 ![frozen forest gameplay]({{"../../assets/cambridge-loading-time.png" | url }})
 
-to optimize *my* website,
+In what world does a dictionary need to pass through this much data? Most of it was advertisements being served to
+me, and telemetry data from cookies.
 
-Accuracy was easy to accomplish, as I stumbled onto the [free dictionary api](https://dictionaryapi.dev/). Its fast many
+I found that I could optimize the workflow by just removing unwanted parts. I planned for myself to be the only user,
+I decided not to advertise to myself, or sell my own data through cookies which removed the biggest offenders right
+away.
+
+To emphasize the quick to load part, I decided to forgo a framework like Angular, React or Vue, even though I use them frequently and decided to just use
+browser-side javascript for the business logic. I did however, to keep myself sane, use jQuery to handle the DOM-tree editing.
+
+Accuracy was easy to accomplish, as I stumbled onto the [free dictionary api](https://dictionaryapi.dev/). Its fast and
 up to date enough that it was very difficult to find words that didn't have an entry. It also had phonetics data which I
 added to the website.
+
