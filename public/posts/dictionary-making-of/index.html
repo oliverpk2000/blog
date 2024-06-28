@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Making my own dictionary website</title>
+    <link rel="stylesheet" href="/blog/css/style.css">
+    <link rel="stylesheet" href="/blog/css/postlist.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/default.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/languages/go.min.js"></script>
+
+    <script>hljs.highlightAll();</script>
+</head>
+<body>
+<main>
+    <div class="page">
+        <h1>Making my own dictionary website</h1>
+        <main>
+    <article><hr>
+<p>Have you ever noticed how dictionaries on the web are so bloated? Let's
+use <a href="https://dictionary.cambridge.org/dictionary/">the cambridge dictionary</a> as an example. First off, at least in the
+EU, you have to navigate through the standard cookies popup, which slows me down from actually looking up the definition
+for a
+word. Then, once you actually search a word, there is a distracting sidebar advertising other unnecessary features of
+the website like, quizzes, word of the day, a blog and a new word poll. I have nothing against these features, I just
+don't want them advertised to me while I'm looking up a definition. A lot of these dictionary websites try to retain
+users with the other features, when in fact, to retain users, a dictionary website just has to serve accurate
+explanations of words. These micro-problems I had with the state of things annoyed me, until I had a long weekend and
+decided to use the project idea to learn jQuery.</p>
+<p>I had a set of criteria for this website:</p>
+<ul>
+<li>quick to load</li>
+<li>simple, no distractions</li>
+<li>accurate</li>
+</ul>
+<p>One of my main objectives was to keep the workflow of using the site as short as possible. I wrote down all the actions
+i took on the cambridge dictionary website (with cache )which amounted to this:</p>
+<p>Accuracy was easy to accomplish, as I stumbled onto the <a href="https://dictionaryapi.dev/">free dictionary api</a>. Its fast many
+up to date enough that it was very difficult to find words that didn't have an entry. It also had phonetics data which I
+added to the website.</p>
+</article>
+</main>
+<footer>
+    <a href="../../"><-- back</a>
+    <br>
+    <br>
+    <a href="https://notbyai.fyi/"><img src="../../assets/Written-By-Human-Not-By-AI-Badge-white.png"
+                                        alt="written by human not by AI"></a>
+</footer>
+    </div>
+</main>
+</body>
+</html>
