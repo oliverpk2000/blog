@@ -22,3 +22,7 @@ a:hover {
 a:visited {
     color: #23648c;
 }
+
+ul {
+    list-style-type: circle;
+}

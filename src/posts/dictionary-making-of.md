@@ -18,13 +18,22 @@ decided to use the project idea to learn jQuery.
 I had a set of criteria for this website:
 
 - quick to load
-- simple, no distractions
+- simple, no distractions / no ads
 - accurate
 
 One of my main objectives was to keep the workflow of using the site as short as possible. I wrote down all the actions
-i took on the cambridge dictionary website (with cache )which amounted to this:
+I took on the cambridge dictionary website (with cache and uBlock origin disabled) which amounted to this:
 
+- accept cookies
+- search word
+- read definition
+- close ad popup because I was too slow to read everything
+- read rest of definition
 
+The load times were also insane. In what world does a dictionary need
+![frozen forest gameplay]({{"../../assets/cambridge-loading-time.png" | url }})
+
+to optimize *my* website,
 
 Accuracy was easy to accomplish, as I stumbled onto the [free dictionary api](https://dictionaryapi.dev/). Its fast many
 up to date enough that it was very difficult to find words that didn't have an entry. It also had phonetics data which I
